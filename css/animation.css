@@ -1,8 +1,8 @@
 #result {
-	-webkit-animation: fadeInAnimation 2s;
-    -moz-animation: fadeInAnimation 2s;
-    -ms-animation: fadeInAnimation 2s;
-    -o-animation: fadeInAnimation 2s;
+	-webkit-animation: riseUpResult 2s;
+    -moz-animation: riseUpResult 2s;
+    -ms-animation: riseUpResult 2s;
+    -o-animation: riseUpResult 2s;
   	animation: riseUpResult 2s;
 }
 @keyframes riseUpResult {
@@ -11,17 +11,25 @@
 }
 
 #inputRow {
-	-webkit-animation: fadeInAnimation 2s;
-    -moz-animation: fadeInAnimation 2s;
-    -ms-animation: fadeInAnimation 2s;
-    -o-animation: fadeInAnimation 2s;
-    animation: fadeInAnimation 2s;
+	-webkit-animation: fadeInAnimation 3s;
+    -moz-animation: fadeInAnimation 3s;
+    -ms-animation: fadeInAnimation 3s;
+    -o-animation: fadeInAnimation 3s;
+    animation: fadeInAnimation 3s;
 }
 @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0.9;
-    }
+    0% {opacity: 0;}
+    100% {opacity: 0.9;}
+}
+
+#titleHeader{
+    -webkit-animation: growHeader 2s;
+    -moz-animation: growHeader 2s;
+    -ms-animation: growHeader 2s;
+    -o-animation: growHeader 2s;
+    animation: growHeader 2s;
+}
+@keyframes growHeader {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
 }
