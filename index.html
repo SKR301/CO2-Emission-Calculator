@@ -4,10 +4,15 @@
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="css/animation.css" media="screen" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+
 	<title></title>
 </head>
 
-<body style="font-family: robonto; background-image: url('img/back.jpg'); background-attachment: fixed; background-repeat: no-repeat;">
+<body style="font-family: Roboto; background-image: url('img/back.jpg'); background-attachment: fixed; background-repeat: no-repeat;">
 
 
 <header class="mt-3 p-2 text-center mb-2 text-light" id="titleHeader">
@@ -17,10 +22,14 @@
 
 
 <!-- link to buy bonds -->
-<p class="p-2 rounded m-2 ml-5 text-warning w-75 mx-auto text-center" id="compensateLink" style="display: none; font-size: 15px;">
-  HOLY MOLY!<br> Wanna compensate for that. <br><a href="#" class="alert-link" style="color: #84d307;">Click here</a>
+<p class="p-2 rounded ml-2 mr-2 mb-2 ml-5 text-dark w-75 mx-auto text-center" id="compensateLink" style="display: none; font-size: 17px; background-color: #84d307;">
+  Let's make a change now and start compensating. <a href="#" class="alert-link text-light">Click here</a>
 </p>
 
+<!-- invalidInput -->
+<p class="p-2 rounded ml-2 mr-2 mb-2 ml-5 text-dark bg-danger w-75 mx-auto text-center" id="errorInput" style="display: none; font-size: 17px;">
+	<b>Invalid Entry!!! Try again with valid inputs.</b>
+</p>
 
 <!-- input field -->
 <div class="mx-auto bg-light text-center rounded" style="width: 85%; opacity: 0.90;" id="inputRow">
@@ -275,6 +284,5 @@
 
 
 </body>
-<script type="text/javascript" src="js/calculate.js">
-</script>
+<script type="text/javascript" src="js/calculate.js"></script>
 </html>

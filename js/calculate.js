@@ -26,10 +26,17 @@ function updateRes() {
 	costOfTrees = treesNeeded * 50;
 	return20Yrs = treesNeeded * 10 * 20;
 
-	document.getElementById('co2emission').innerHTML = "CO2 emission(kg): <br/> " + co2emission.toFixed(2);
-	document.getElementById('treesNeeded').innerHTML = "Trees needed: <br/> " + treesNeeded.toFixed(2);
-	document.getElementById('costOfTrees').innerHTML = "Costs of trees: <br/> " + costOfTrees.toFixed(2);
-	document.getElementById('return20Yrs').innerHTML = "Return in 20yr: <br/>" + return20Yrs.toFixed(2);
+	if(isNaN(parseFloat(co2emission))){
+		document.getElementById('errorInput').style.display = "block";
+		document.getElementById('compensateLink').style.display = "none";
+	} else {
+		document.getElementById('co2emission').innerHTML = "CO2 emission(kg): <br/> " + co2emission.toFixed(2);
+		document.getElementById('treesNeeded').innerHTML = "Trees needed: <br/> " + treesNeeded.toFixed(2);
+		document.getElementById('costOfTrees').innerHTML = "Costs of trees: <br/> " + costOfTrees.toFixed(2);
+		document.getElementById('return20Yrs').innerHTML = "Return in 20yr: <br/>" + return20Yrs.toFixed(2);
 
-	document.getElementById('compensateLink').style.display = "block";
+		document.getElementById('compensateLink').style.display = "block";
+		document.getElementById('errorInput').style.display = "none";
+	}
+
 }
